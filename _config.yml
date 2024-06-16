@@ -1,0 +1,71 @@
+# Site settings
+title: MZSol.com
+email: mzsol@mzsol.com
+url: https://mzsol.com
+description: "MZSol 웹사이트에 방문하신 것을 환영합니다"
+keywords: "전장자동화, 제어, PLC"
+skills: "PLC 등과 기계장비 제어, 공정자동화 등을 돕습니다"
+meta_author: Lim Alex
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: Alex Lim
+  location: Seoul, South Korea
+  social: Around the Web
+  credits: Jekyll Freelancer Theme
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  #- title: twitter
+  #  url: http://twitter.com/jekyllrb
+  #- title: facebook
+  #  url:
+  #- title: stack-overflow
+  #  url: http://stackoverflow.com/questions/tagged/jekyll
+  #- title: bitbucket
+  #  url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/mzsol2024
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 사무실 - 경기도 화성시 동탄순환대로 823, 2층 210호(영천동, 에이팩시티)
+  - line: 공장 - 경기도 안산시 단원구 신원로 91번길 89 108동 중앙이노텍 내
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""
