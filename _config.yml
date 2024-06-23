@@ -1,71 +1,88 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
 # Site settings
-title: MZSol.com
-email: mzsol@mzsol.com
-url: https://mzsol.com
-description: "MZSol 웹사이트에 방문하신 것을 환영합니다"
-keywords: "전장자동화, 제어, PLC"
-skills: "PLC 등과 기계장비 제어, 공정자동화 등을 돕습니다"
-meta_author: Lim Alex
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# Google webmaster tools
-google_verify:
+title: Odin - A Jekyll Knowledge Base Theme
+description: Odin is a simple to setup and use Jekyll theme for help desks and knowledge bases. Hosts for free on Github Pages!
+baseurl: /odin # the subpath of your site, e.g. /support
+url: https://teaguns.github.io # the base hostname AND PROTOCOL for your site, e.g. http://example.com
+permalink: /:categories/:title
 
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+content_type: Knowledge Base #Define whether this is a knowledge base, help center, or something else
+use_authors: true #Set this to false to disable showing post authors
 
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
-contact: static
+brand_logo: logo.png
+brand_name: Odin
+header: How can we help you?
+subheader: Support and documentation for Odin
 
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: myshortname
+meta_image: odin-meta.png
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+# Social Links
+twitter_username: TheTeaGuns
+facebook_page:
+github_username: TeaGuns
+email: m@credd.in
+linkedin_page:
+instagram_username: 
 
-# Footer settings
-footer:
-  copyright: Alex Lim
-  location: Seoul, South Korea
-  social: Around the Web
-  credits: Jekyll Freelancer Theme
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  #- title: twitter
-  #  url: http://twitter.com/jekyllrb
-  #- title: facebook
-  #  url:
-  #- title: stack-overflow
-  #  url: http://stackoverflow.com/questions/tagged/jekyll
-  #- title: bitbucket
-  #  url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/mzsol2024
+# Navivation
+nav_item_one: Github
+nav_item_one_link: https://github.com/TeaGuns/odin
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: 사무실 - 경기도 화성시 동탄순환대로 823, 2층 210호(영천동, 에이팩시티)
-  - line: 공장 - 경기도 안산시 단원구 신원로 91번길 89 108동 중앙이노텍 내
+nav_item_two: Twitter
+nav_item_two_link: https://twitter.com/TheTeaGuns
 
-# Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+nav_item_three: #
+nav_item_three_link: #
+
+nav_button: Return to Odin Home
+nav_button_link: https://teaguns.github.io/odin/
+
+# More Help
+help_one_title: Odin Bugs
+help_one_content: If you find any bugs or problems with this theme, please open an issue over on Github.
+help_one_button: Github
+help_one_link: https://github.com/TeaGuns/odin/issues
+
+help_two_title: Twitter
+help_two_content: Feel free to tweet at me if you have suggestions for Odin. Or if you just want to say hi.
+help_two_button: Twitter
+help_two_link: https://twitter.com/theteaguns
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
 
-#for posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: ""
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+
+
+sass:
+  sass_dir:          _scss
+  style:            :compressed

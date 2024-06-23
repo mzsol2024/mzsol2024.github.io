@@ -1,5 +1,9 @@
-MZSol Company Website
-=========================
+# Odin Knowledge Base
 
-Forked Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/).
-All materials used are belong to the original owner and their copyright requirements.
+Odin is a Jekyll template for knowledgebases and support sites. Please see the [official Jekyll docs](https://jekyllrb.com/docs/) for more info on running, building and editing a Jekyll site.
+
+*Full documentation is in the works and coming soon*
+
+
+
+
